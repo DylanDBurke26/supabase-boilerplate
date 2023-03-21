@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.css">
     <title>Document</title>
 </head>
-<body>
-    <h1>Books</h1>
-
-    <table id="books" border="1">        
-        <tr>
+<body class="bg-gray-600 grid grid-cols-7 grid-rows-5 h-[100vh] font-mono text-lg text-white align-bottom justify-center">
+    <div class="col-start-4 col-end-5 grid grid-rows-3">
+        <div class="row-start-2 text-3xl text-center">Dylan's Favorite Books</div>
+    </div>
+    <table id="books" class="col-start-2 col-end-7 row-start-2 row-end-5 table-auto rounded-md">        
+        <tr class="text-lg">
             <th>Title</th>
             <th>Author</th>
             <th>ISBN</th>
+            <th>Description</th>
         </tr>
 
     </table>

@@ -11,7 +11,11 @@ async function getBooks() {
   
   for (let book of Books) {
     let bookList = document.getElementById('books');
-    bookList.innerHTML += `<tr><td>${book.title}</td><td>${book.author}</td><td>${book.isbn}</td></tr>`
+    bookList.innerHTML += `<tr class="text-center">
+    <td class="border-4 border-black">${book.title}</td>
+    <td class="border-4 border-black">${book.author}</td>
+    <td class="border-4 border-black"><a href="https://www.google.com/search?q=${book.isbn}">${book.isbn}</td>
+    <td class="border-4 border-black">${book.description}</td></tr>`
   }
   
 }  
